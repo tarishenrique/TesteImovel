@@ -1,13 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package testeimovel;
 
-/**
- *
- * @author taris
- */
-public class Novo {
-    
+package testeimovel;
+public class Novo extends Imovel{
+    private double adicionalPreco;
+
+    public double getAdicionalPreco() {
+        return adicionalPreco;
+    }
+
+    public void setAdicionalPreco(double adicionalPreco) {
+        this.adicionalPreco = adicionalPreco;
+    }
+
+    public void printNovo(){
+
+        printImovel();
+        System.out.println(
+            "Preço adicional: " + (preco + adicionalPreco)
+        );
+    }   
 }

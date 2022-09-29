@@ -1,13 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package testeimovel;
 
-/**
- *
- * @author taris
- */
-public class Velho {
-    
+public class Velho extends Imovel {
+    private double descontoPreco;
+
+    public double getDescontoPreco() {
+        return descontoPreco;
+    }
+
+    public void setDescontoPreco(double descontoPreco) {
+        this.descontoPreco = descontoPreco;
+    }
+
+    public void printVelho(){
+
+        printImovel();
+        System.out.println(
+            "Preço com desconto: " + (preco - descontoPreco)
+        );
+    }    
 }
